@@ -1,0 +1,78 @@
+.contact {
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+   
+    
+    &__item {
+      margin-left: 50px;
+      align-items: center;
+      text-decoration: none;
+    }
+   
+    &__svg-link {
+      display: flex;
+      align-items: center;
+      color: var(--primory-text-color);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1, 43;
+      letter-spacing: 0.02em;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: var(--cubick);
+    }
+    &__svg-link:hover,
+    &__svg-link:focus {
+      color: var(--accent-color);
+    }  
+    &__icon-mail {
+      display: block;
+      fill: #afb1b8;
+      height: 12px;
+      width: 16px;
+      justify-content: center;
+      margin-right: 10px;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: var(--cubick);
+    }
+    &__icon-tel {
+      display: block;
+      fill: #afb1b8;
+      height: 16px;
+      width: 10px;
+      justify-content: center;
+      margin-right: 10px;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: var(--cubick);
+    }
+
+    &__svg-link:hover &__icon-tel,
+ &__svg-link:focus &__icon-tel {
+    fill: var(--accent-color);
+  }
+  &__svg-link:hover &__icon-mail,
+  &__svg-link:focus &__icon-mail{
+    fill: var(--accent-color);    
+  }
+ 
+ 
+
+  }
+  @media screen and (max-width: 767px) {
+    .contact{
+      display: none;
+    }
+  }
+ 
+  
+  
+  

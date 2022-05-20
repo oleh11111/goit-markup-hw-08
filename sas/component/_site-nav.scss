@@ -1,0 +1,60 @@
+.site-nav { display: block;
+  display: flex;
+  align-items: center;
+  display: block;
+  display: flex;
+
+  @media screen and (max-width:767px) {
+    display: none;
+    
+  }
+
+  &__list {
+    display: block;
+    display: flex;
+    align-items: center;
+    display: block;
+    display: flex;
+  }
+  
+  &__item + &__item {
+    margin-left: 50px;
+  }
+ 
+  &__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.02em;
+    justify-content: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubick);
+  }
+  &__link:hover,
+  &__link:focus {
+  color: var(--accent-color);
+}
+&__after-link {
+  position: relative;
+}
+&__after-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  content: "";
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  @media screen and(max-width: 767px) {
+    position: absolute;
+  }
+}
+}
+ 

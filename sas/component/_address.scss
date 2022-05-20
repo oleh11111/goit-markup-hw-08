@@ -1,0 +1,41 @@
+.address {
+  &__physical-address {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--ccolor-withe);
+  }
+
+  &__list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 9px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
