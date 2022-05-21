@@ -1,5 +1,9 @@
 .our-works{
     padding-bottom: 94px;
+   
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
 
   &__title {
     margin-top: 0px;
@@ -66,10 +70,4 @@
     background-color: rgba(47, 48, 58, 0.8);
   }
 }
-
-
-
-  
-  
-  
   

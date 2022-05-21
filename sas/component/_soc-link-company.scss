@@ -1,8 +1,21 @@
 .soc-link-company{
   margin-left: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0px;
+   margin-bottom: 60px;
+  
+  }
+
+  
  
   &__list {
     display: flex; 
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    
+    }
+    
   }
  
   &__item {
@@ -10,13 +23,15 @@
     height: 44px;
     border-radius: 50% 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    justify-content: center;
+  
   }
 
   &__link{
     display: block;
+   
     padding: 12px;
     border-radius: 50% 50%;
+   
     
     transition-property: background-color;
     transition-duration: 250ms;
@@ -27,7 +42,7 @@
     }
   }
 
-  &__link
+  
 
   &__item + &__item{
     margin-left: 10px;
@@ -54,6 +69,10 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
+    @media screen  and (max-width: 767px) {
+      text-align: center;
+    }
   
 }
 }
