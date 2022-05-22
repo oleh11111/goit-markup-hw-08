@@ -1249,10 +1249,6 @@ img {
 }
 
 .portpholio .overlay-text {
-  padding-top: 63px;
-  padding-right: 24px;
-  padding-bottom: 63px;
-  padding-left: 24px;
   max-width: 370px;
   font-size: 18px;
   line-height: 1.56;
@@ -1264,6 +1260,20 @@ img {
   .portpholio .overlay-text {
     padding: 77px 24px;
     max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portpholio .overlay-text {
+    padding: 49px 24px 77px 24px;
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portpholio .overlay-text {
+    padding: 63px 24px 63px 24px;
+    max-width: 370px;
   }
 }
 
