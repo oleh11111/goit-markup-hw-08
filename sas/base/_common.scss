@@ -19,7 +19,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
@@ -27,7 +27,7 @@ body {
    }
 
   @media screen and (min-width: 768px) {
-    width: 768px; 
+  width: 768px; 
  }
  
   @media screen and (min-width: 1200px) {

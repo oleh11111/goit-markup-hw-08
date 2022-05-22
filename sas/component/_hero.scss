@@ -7,10 +7,14 @@ display: block;
   padding-top: 200px;
   padding-bottom: 200px;
   background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), url(../imige/deskheader1x.jpg);
 
   @media screen and (min-width: 768px) {
     padding-top: 118px;
   padding-bottom: 118px;
+  width: 1600px;
   }
 
   
@@ -31,16 +35,19 @@ display: block;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)), url(../imige/tablheader1x.jpg);
+      
+      width: 768px;
   }
   @media (min-resolution2dppx) {
     background-image: url(../imige/tablheader2x.jpg);
+    
   }
 
   @media (min-width: 1200px) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)), url(../imige/deskheader1x.jpg);
-  
+    width: 1600px;
   }
 
   @media (min-resolution2dppx) {
@@ -67,6 +74,8 @@ display: block;
     @media screen and (max-width: 1200px) {
       font-size: 26px;
       line-height: 1.62;
+      max-width: 360px;
+      width: 100%;
     }
   }
 }

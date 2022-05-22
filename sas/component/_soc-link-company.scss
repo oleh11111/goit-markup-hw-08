@@ -4,7 +4,16 @@
   @media screen and (max-width: 767px) {
     margin-left: 0px;
    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px){
+    margin-left: auto;
+    margin-right: 89px;   
+  }
   
+  @media screen and (min-width:1200px){
+    margin: left 70px;;
+    margin-right: 0px;   
   }
 
   
@@ -12,8 +21,7 @@
   &__list {
     display: flex; 
     @media screen and (max-width: 767px) {
-      justify-content: center;
-    
+      justify-content: center;    
     }
     
   }

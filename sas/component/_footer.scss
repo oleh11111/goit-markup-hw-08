@@ -17,7 +17,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
   }
 
   @media screen and (min-width: 1200px) {
@@ -29,4 +29,14 @@
 .footer-address {
   text-align: center;
   margin-bottom: 60px;
+ 
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {    
+    margin: 0px;
+    
+}
 }
