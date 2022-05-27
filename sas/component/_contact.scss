@@ -95,17 +95,17 @@
 }
 .contact .mail {
   @media screen and (max-width: 767px) {
-    font-size: 24px;
-    line-height: 1.17;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
+   
   }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
   }
+}
+
+.mail-mobile{
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .tel-mobile {
@@ -114,6 +114,19 @@
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: var(--accent-color);   
+  }
+  @media screen and (max-width: 400px){
+    font-size: 28px;
+    line-height: 1.16;
+  }
+}
+.contact .tel{
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
   }
 }
