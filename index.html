@@ -24,22 +24,20 @@
           <a href="index.html" class="page-header__logo">
             <span class="page-header__logo-lable">Web</span>Studio</a
           >
-          <button type="button" class="menu-open " data-menu-button>
-            <svg>
-            
-              <use class="menu-icon" href="./imige/sprite.svg#menu"></use>
+          <button class="menu-button is-open" data-menu-button
+            type="button"
+            aria-label="переключатель мобильного меню"
+            aria-expanded="false"
+            aria-controls="menu-container">
+            <svg class="menu-icon" width="40" height="40">        
+              <use class="menu-icon-open" href="./imige/sprite.svg#open"></use>
+              <use class="menu-icon-close" href="./imige/sprite.svg#close"></use>
             </svg>
           </button>
-          <div class="menu-container" data-menu is-open >
-            <button type="button" class="menu-close" data-menu-button> 
-              <svg 
-              width="40"
-              height="40">
-              <use class="menu-icon" href="./imige/sprite.svg#closemenu"></use>
-              </svg>
-            </button>
+
+          <div class="menu-container is-open" id="menu-container" data-menu>            
             <ul class="site-nav__list">
-                <li class="site-nav__item ">
+                <li class="site-nav__item">
                   <a href="index.html" class="site-nav__link site-nav__after-link">Студия</a>
                 </li>
                 <li class="site-nav__item">
@@ -48,57 +46,32 @@
                 <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
               </ul>
 
-              <ul class="contact">
-                <li class="contact__item">
-                  <a href="mailto:info@devstudio.com" class="contact__svg-link">
-                    <svg class="contact__icon-mail">
-                      <use href=".//imige/sprite.svg#mail" class=""></use></svg> ,?</a>                
-                </li>     
-                <li class="menu__contact__item">
-                  <a href="tel:+380961111111" class="contact__svg-link">
-                    <svg class="contact__icon-tel">
-                      <use href="./imige/sprite.svg#tel"></use></svg
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-
-              <ul class="menu__list">
-                <li class="menu__item"><a href="" class="menu__link">Instagram</a></li>
-                <li class="menu__item">
-                  <a href="" class="menu__link">Twitter</a></li>
-                <li class="menu__item"><a href="" class="menu__link"> Facebook</a></li>
-                <li class="menu__item"> <a href="" class="menu__link">LinkedIn</a></li>
-              </ul>
+              
+                <ul class="contact">
+                  <li class="contact__item mail">
+                    <a href="mailto:info@devstudio.com" class="contact__svg-link">
+                      <svg class="contact__icon-mail c-icon">
+                        <use href=".//imige/sprite.svg#mail" class=""></use></svg>info@devstudio.com </a>                
+                  </li>     
+                  <li class="contact__item">
+                    <a href="tel:+380961111111" class="contact__svg-link tel-mobile">
+                      <svg class="contact__icon-tel c-icon">
+                        <use href="./imige/sprite.svg#tel"></use></svg
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+  
+                <ul class="menu-soc-list">
+                  <li class="menu-soc-item"><a href="" class="menu-soc-link">Instagram</a></li>
+                  <li class="menu-soc-item">
+                    <a href="" class="menu-soc-link">Twitter</a></li>
+                  <li class="menu-soc-item"><a href="" class="menu-soc-link"> Facebook</a></li>
+                  <li class="menu-soc-item"> <a href="" class="menu-soc-link">LinkedIn</a></li>
+                </ul>
+              
           </div>
-          <nav class="site-nav">
-          <ul class="site-nav__list">
-            <li class="site-nav__item ">
-              <a href="index.html" class="site-nav__link site-nav__after-link">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__svg-link">
-              <svg class="contact__icon-mail">
-                <use href=".//imige/sprite.svg#mail" class=""></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-
-          <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__svg-link">
-              <svg class="contact__icon-tel">
-                <use href="./imige/sprite.svg#tel"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+         
       </div>
     </header>
     <main>
@@ -215,8 +188,8 @@
               <img
                 class="comand__img"
                 srcset="
-                ./imige/comdesk1.1x.jpg 270w, ./imige/tblcom1.1x.jpg 354w, ./imige/comand1/.1x.jpg 450w,
-                ./imige/comdesk1.2x.jpg 540w, ./imige/tblcom1.2x.jpg 708w, ./imige/comand1/2x.jpg 900w"
+                ./imige/comdesk1.1x.jpg 270w, ./imige/tablcom1.1x.jpg 354w, ./imige/comand1.1x.jpg 450w,
+                ./imige/comdesk1.2x.jpg 540w, ./imige/tablcom1.2x.jpg 708w, ./imige/comand1.2x.jpg 900w"
                 src="./imige/comdesk1.1x.jpg"
                 width="270"
                 alt="сотрудник Product Designer"
@@ -261,8 +234,8 @@
               <img
                 class="comand__img"
                 srcset="
-                ./imige/comdesk2.1x.jpg 270w, ./imige/tablcom2.1x.jpg 354w, ./imige/comand2/1.jpg 450w,
-                ./imige/comdesk2.2x.jpg 540w, ./imige/tablcom2.2x.jpg 708w, ./imige/comand2/2x.jpg 900w"
+                ./imige/comdesk2.1x.jpg 270w, ./imige/tablcom2.1x.jpg 354w, ./imige/comand2.1x.jpg 450w,
+                ./imige/comdesk2.2x.jpg 540w, ./imige/tablcom2.2x.jpg 708w, ./imige/comand2.2x.jpg 900w"
                 src="./imige/comdesk2.1x.jpg"
                 width="270"
                 alt="сотрудник Frontend Developer"
@@ -306,8 +279,8 @@
               <img
                 class="comand__img"
                 srcset="
-                ./imige/comdesk3.1x.jpg 270w, ./imige/tablcom3.1x.jpg 354w, ./imige/comand3/1.jpg 450w,
-                ./imige/comdesk3.2x.jpg 540w, ./imige/tablcom3.2x.jpg 708w, ./imige/comand3/2x.jpg 900w"
+                ./imige/comdesk3.1x.jpg 270w, ./imige/tablcom3.1x.jpg 354w, ./imige/comand3.1.jpg 450w,
+                ./imige/comdesk3.2x.jpg 540w, ./imige/tablcom3.2x.jpg 708w, ./imige/comand3.2x.jpg 900w"
                 src="./imige/comdesk3.1x.jpg"
                 width="270"
                 alt="сотрудник Marketing"
@@ -352,8 +325,8 @@
               <img
                 class="comand__img"
                 srcset="
-                ./imige/comdesk4.1x.jpg 270w, ./imige/tablcom4.1x.jpg 354w, ./imige/comand4/1.jpg 450w,
-                ./imige/comdesk4.2x.jpg 540w, ./imige/tablcom4.2x.jpg 708w, ./imige/comand4/2x.jpg 900w"
+                ./imige/comdesk4.1x.jpg 270w, ./imige/tablcom4.1x.jpg 354w, ./imige/comand4.1.jpg 450w,
+                ./imige/comdesk4.2x.jpg 540w, ./imige/tablcom4.2x.jpg 708w, ./imige/comand4.2x.jpg 900w"
                 src="./imige/comdesk4.1x.jpg"
                 width="270"
                 alt="сотрудник Marketing"
