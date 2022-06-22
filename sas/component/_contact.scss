@@ -3,6 +3,13 @@
   align-items: center;
   margin-left: auto;
 
+  @media screen and (max-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   @media screen and (max-width: 767px) {
     display: block;
     margin-top: auto;
@@ -17,7 +24,6 @@
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     display: flex;
-    flex-wrap: wrap;
   }
 
   &__item {
@@ -49,12 +55,10 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 1.16;
+      
     }
   }
-  &__svg-link:hover,
-  &__svg-link:focus {
-    color: var(--accent-color);
-  }
+
   &__icon-mail {
     display: block;
     fill: #afb1b8;
@@ -92,20 +96,17 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-}
-.contact .mail {
-  @media screen and (max-width: 767px) {
-   
-  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
   }
 }
 
-.mail-mobile{
-  font-size: 24px;
-  line-height: 1.17;
+.mail-mobile {
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .tel-mobile {
@@ -114,19 +115,30 @@
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    color: var(--accent-color);   
+    color: var(--accent-color);
   }
-  @media screen and (max-width: 400px){
-    font-size: 28px;
-    line-height: 1.16;
+  @media screen and (max-width: 400px) {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
-.contact .tel{
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
-  }
-  
+.contact .tel {
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__svg-link:hover, 
+      .contact__svg-link:focus {
+        color: var(--accent-color);
+      }
 }
