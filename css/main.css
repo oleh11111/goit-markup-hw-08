@@ -1416,7 +1416,6 @@ img {
 }
 
 .portpholio .overlay-text {
-  font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -1424,13 +1423,24 @@ img {
   padding-left: 24px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 399px) {
+  .portpholio .overlay-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 400px) {
   .portpholio .overlay-text {
     width: 450px;
     padding-top: 77px;
     padding-bottom: 77px;
-    align-items: center;
+    font-size: 18px;
     display: flex;
+    align-items: center;
   }
 }
 
@@ -1439,8 +1449,6 @@ img {
     padding-top: 49px;
     padding-bottom: 77px;
     width: 354px;
-    display: flex;
-    align-items: center;
   }
 }
 
