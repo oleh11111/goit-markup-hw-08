@@ -178,20 +178,20 @@ transition-timing-function: var(--cubick);
 }
 
 .modal .input-check:checked+.check-box{
-  background-image: url(../css/imige/icon-on.svg);
+  background-image: url(../images/icon-on.svg);
 }
 
 .modal .check-box{ 
   position: absolute;
   top: 2px;
-  left: -16px;
+  left: -20px;
 
   width: 16px;
   height: 15px;
   margin-top: 2px;
   margin-left: 14px;
   border-radius: 4px;
-  background-image: url(../css/imige/icon-off.svg);
+  background-image: url(../images/icon-off.svg);
   fill: #212121;
 }
 
