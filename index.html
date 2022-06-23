@@ -15,63 +15,78 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__container container">
-       
-          <a href="index.html" class="page-header__logo">
-            <span class="page-header__logo-lable">Web</span>Studio</a
-          >
-          <button class="menu-button is-open" data-menu-button
-            type="button"
-            aria-label="переключатель мобильного меню"
-            aria-expanded="false"
-            aria-controls="menu-container">
-            <svg class="menu-icon" width="40" height="40">        
-              <use class="menu-icon-open" href="./imige/sprite.svg#open"></use>
-              <use class="menu-icon-close" href="./imige/sprite.svg#close"></use>
-            </svg>
-          </button>
+        <a href="index.html" class="page-header__logo">
+          <span class="page-header__logo-lable">Web</span>Studio</a
+        >
+        <button
+          class="menu-button"
+          data-menu-button
+          type="button"
+          aria-label="переключатель мобильного меню"
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg class="menu-icon" width="40" height="40">
+            <use class="menu-icon-open" href="./images/sprite.svg#open"></use>
+            <use class="menu-icon-close" href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
 
-          <div class="menu-container is-open" id="menu-container" data-menu>            
-            <ul class="site-nav__list">
-                <li class="site-nav__item">
-                  <a href="index.html" class="site-nav__link site-nav__after-link">Студия</a>
-                </li>
-                <li class="site-nav__item">
-                  <a href="portfolio.html" class="site-nav__link">Портфолио</a>
-                </li>
-                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-              </ul>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="site-nav__list site-nav">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link site-nav__after-link"
+                >Студия</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
 
-              
-                <ul class="contact">
-                  <li class="contact__item tel">
-                    <a href="tel:+380961111111" class="contact__svg-link tel-mobile">
-                      <svg class="contact__icon-tel c-icon">
-                        <use href="./imige/sprite.svg#tel"></use></svg
-                      >+38 096 111 11 11</a
-                    >
-                  </li>
-                  <li class="contact__item mail">
-                    <a href="mailto:info@devstudio.com" class="contact__svg-link mail-mobile">
-                      <svg class="contact__icon-mail c-icon">
-                        <use href=".//imige/sprite.svg#mail" class=""></use></svg>info@devstudio.com </a>                
-                  </li>     
-                </ul>
-  
-                <ul class="menu-soc-list">
-                  <li class="menu-soc-item"><a href="" class="menu-soc-link">Instagram</a></li>
-                  <li class="menu-soc-item">
-                    <a href="" class="menu-soc-link">Twitter</a></li>
-                  <li class="menu-soc-item"><a href="" class="menu-soc-link"> Facebook</a></li>
-                  <li class="menu-soc-item"> <a href="" class="menu-soc-link">LinkedIn</a></li>
-                </ul>
-              
-          </div>
-         
+          <ul class="contact">
+            <li class="contact__item tel">
+              <a href="tel:+380961111111" class="contact__svg-link tel-mobile">
+                <svg class="contact__icon-tel c-icon">
+                  <use href="./imige/sprite.svg#tel"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="contact__item mail">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contact__svg-link mail-mobile"
+              >
+                <svg class="contact__icon-mail c-icon">
+                  <use href=".//imige/sprite.svg#mail" class=""></use></svg
+                >info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu-soc-list">
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">Instagram</a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">Twitter</a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link"> Facebook</a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -81,14 +96,14 @@
           Заказать услугу
         </button>
       </section>
-    <section class="peculiarties">
+      <section class="peculiarties">
         <div class="container">
           <h2 class="peculiarties__title">Особенности</h2>
           <ul class="peculiarties__list">
             <li class="peculiarties__item">
               <div class="peculiarties__svg">
                 <svg class="peculiarties__icon">
-                  <use href="./imige/sprite.svg#antenna"></use>
+                  <use href="./images/sprite.svg#antenna"></use>
                 </svg>
               </div>
               <h3 class="peculiarties__title-item">Внимание к деталям</h3>
@@ -101,7 +116,7 @@
             <li class="peculiarties__item">
               <div class="peculiarties__svg">
                 <svg class="peculiarties__icon">
-                  <use href="./imige/sprite.svg#clock"></use>
+                  <use href="./images/sprite.svg#clock"></use>
                 </svg>
               </div>
               <h3 class="peculiarties__title-item">Пунктуальность</h3>
@@ -114,7 +129,7 @@
             <li class="peculiarties__item">
               <div class="peculiarties__svg">
                 <svg class="peculiarties__icon">
-                  <use href="./imige/sprite.svg#diagram"></use>
+                  <use href="./images/sprite.svg#diagram"></use>
                 </svg>
               </div>
               <h3 class="peculiarties__title-item">Планирование</h3>
@@ -123,10 +138,10 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class= "peculiarties__item">
+            <li class="peculiarties__item">
               <div class="peculiarties__svg">
                 <svg class="peculiarties__icon">
-                  <use href="./imige/sprite.svg#astronaut"></use>
+                  <use href="./images/sprite.svg#astronaut"></use>
                 </svg>
               </div>
               <h3 class="peculiarties__title-item">Современные технологии</h3>
@@ -145,10 +160,9 @@
             <li class="our-works__item our-works__desktop-app">
               <img
                 class="our-works__img"
-                srcset="./imige/work11x.jpg 370w, ./imige/work12x.jpg 740w"
-                src="./imige/work11x.jpg"
-                width="370"
-                alt="руки на клавиатуре и планшет"
+                srcset="./images/team/desktop/work11x.jpg 370w, ./images/team/desktop/work12x.jpg 740w"
+                src="./images/team/desktop/work11x.jpg"
+                alt="в женской руке планшет с палитрой на экране"
               />
               <div class="our-works__position">
                 <p class="our-works__text">Десктопные приложения</p>
@@ -156,11 +170,11 @@
             </li>
             <li class="our-works__item our-works__mobile-app">
               <img
-                class="our-works__img"
-                srcset="./imige/work21x.jpg 370w, ./imige/work22x.jpg 740w"
-                src="./imige/work21x.jpg"
-                alt="женская зука на клавиатуре"
-              />
+              class="our-works__img"
+              srcset="./images/team/desktop/work21x.jpg 370w, ./images/team/desktop/work22x.jpg 740w"
+              src="./images/team/desktop/work21x.jpg"
+              alt="в женской руке планшет с палитрой на экране"
+            />
               <div class="our-works__position">
                 <p class="our-works__text">Мобильные приложения</p>
               </div>
@@ -168,8 +182,8 @@
             <li class="our-works__item our-works__design-img">
               <img
                 class="our-works__img"
-                srcset="./imige/work31x.jpg 370w, ./imige/work32x.jpg 740w"
-                src="./imige/work31x.jpg"
+                srcset="./images/team/desktop/work31x.jpg 370w, ./images/team/desktop/work32x.jpg 740w"
+                src="./images/team/desktop/work31x.jpg"
                 alt="в женской руке планшет с палитрой на экране"
               />
               <div class="our-works__position">
@@ -185,15 +199,32 @@
           <h2 class="comand__title">Наша команда</h2>
           <ul class="comand__list">
             <li class="comand__item">
-              <img
-                class="comand__img"
-                srcset="
-                ./imige/comdesk1.1x.jpg 270w, ./imige/tablcom1.1x.jpg 354w, ./imige/comand1.1x.jpg 450w,
-                ./imige/comdesk1.2x.jpg 540w, ./imige/tablcom1.2x.jpg 708w, ./imige/comand1.2x.jpg 900w"
-                src="./imige/comdesk1.1x.jpg"
-                width="270"
-                alt="сотрудник Product Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/comdesk1.1x.jpg 1x,
+                    ./images/team/desktop/comdesk1.2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/tblcom1.1x.jpg 1x,
+                    ./images/team/tablet/tblcom1.2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/comand1.1x.jpg 1x,
+                    ./images/team/mobile/comand1.2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img class="portpholio-img"
+                src="./images/team/mobile/comand1.1x.jpg" alt="igor"
+                aria-label="два баскетболиста"
+              </picture>
               <div class="comand__info-employee">
                 <h3 class="comand__name">Игорь Демьяненко</h3>
                 <p class="comand__text">Product Designer</p>
@@ -231,15 +262,32 @@
             </li>
 
             <li class="comand__item">
-              <img
-                class="comand__img"
-                srcset="
-                ./imige/comdesk2.1x.jpg 270w, ./imige/tablcom2.1x.jpg 354w, ./imige/comand2.1x.jpg 450w,
-                ./imige/comdesk2.2x.jpg 540w, ./imige/tablcom2.2x.jpg 708w, ./imige/comand2.2x.jpg 900w"
-                src="./imige/comdesk2.1x.jpg"
-                width="270"
-                alt="сотрудник Frontend Developer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/comdesk2.1x.jpg 1x,
+                    ./images/team/desktop/comdesk2.2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/tablcom2.1x.jpg 1x,
+                    ./images/team/tablet/tablcom2.2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/comand2.1x.jpg 1x,
+                    ./images/team/mobile/comand2.2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img class="portpholio-img"
+                src="./images/team/mobile/comand2.1x.jpg" alt="igor"
+                aria-label="два баскетболиста"
+              </picture>
               <div class="comand__info-employee">
                 <h3 class="comand__name">Ольга Репина</h3>
                 <p class="comand__text">Frontend Developer</p>
@@ -276,15 +324,32 @@
               </div>
             </li>
             <li class="comand__item">
-              <img
-                class="comand__img"
-                srcset="
-                ./imige/comdesk3.1x.jpg 270w, ./imige/tablcom3.1x.jpg 354w, ./imige/comand3.1.jpg 450w,
-                ./imige/comdesk3.2x.jpg 540w, ./imige/tablcom3.2x.jpg 708w, ./imige/comand3.2x.jpg 900w"
-                src="./imige/comdesk3.1x.jpg"
-                width="270"
-                alt="сотрудник Marketing"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/comdesk1.1x.jpg 1x,
+                    ./images/team/desktop/comdesk1.2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/tablcom3.1x.jpg 1x,
+                    ./images/team/tablet/tablcom3.2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/comand1.1x.jpg 1x,
+                    ./images/team/mobile/comand1.2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img class="portpholio-img"
+                src="./images/team/mobile/comand3.1x.jpg" alt="igor"
+                aria-label="два баскетболиста"
+              </picture>
               <div class="comand__info-employee">
                 <h3 class="comand__name">Николай Тарасов</h3>
                 <p class="comand__text">Marketing</p>
@@ -322,15 +387,32 @@
               </div>
             </li>
             <li class="comand__item">
-              <img
-                class="comand__img"
-                srcset="
-                ./imige/comdesk4.1x.jpg 270w, ./imige/tablcom4.1x.jpg 354w, ./imige/comand4.1.jpg 450w,
-                ./imige/comdesk4.2x.jpg 540w, ./imige/tablcom4.2x.jpg 708w, ./imige/comand4.2x.jpg 900w"
-                src="./imige/comdesk4.1x.jpg"
-                width="270"
-                alt="сотрудник Marketing"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/comdesk4.1x.jpg 1x,
+                    ./images/team/desktop/comdesk4.2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/tablcom4.1x.jpg 1x,
+                    ./images/team/tablet/tblcom4.2x.jpg  2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/comand4.1x.jpg 1x,
+                    ./images/team/mobile/comand4.2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img class="portpholio-img"
+                src="./images/team/mobile/comand4.1x.jpg" alt="igor"
+                aria-label="два баскетболиста"
+              </picture>
               <div class="comand__info-employee">
                 <h3 class="comand__name">Михаил Ермаков</h3>
                 <p class="comand__text">UI Designer</p>
@@ -440,7 +522,9 @@
                 >
               </li>
               <li class="address__item">
-                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="address__link"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -452,7 +536,6 @@
             <li class="soc-link-company__item">
               <a href="instagram.com" class="soc-link-company__link">
                 <svg class="soc-link-company__icon">
-                
                   <use href="./imige/sprite.svg#instagram"></use>
                 </svg>
               </a>
@@ -483,10 +566,9 @@
         </section>
         <section class="subscription">
           <form class="subscription__form">
-            
-              <p class="subscription__text">Подпишитесь на рассылку</p>
-              <div class="subscription__leveling">
-                <label class="subscription__mail">
+            <p class="subscription__text">Подпишитесь на рассылку</p>
+            <div class="subscription__leveling">
+              <label class="subscription__mail">
                 <input
                   class="subscription__input-mail"
                   type="email"
@@ -494,23 +576,23 @@
                   placeholder="E-mail"
                 />
               </label>
-           
 
-            <button type="submit" class="subscription__button">
-              Подписаться
-              <svg class="subscription__icon">
-                <use href="./imige/icon-form.svg#telegram"></use>
-              </svg>
-            </button></div>
+              <button type="submit" class="subscription__button">
+                Подписаться
+                <svg class="subscription__icon">
+                  <use href="./images/icon-form.svg#telegram"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </section>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button  type="button" data-modal-close class="modal-button">
-          <svg class="modal-close" >
-            <use href="./imige/icon-form.svg#close-black"></use>
+        <button type="button" data-modal-close class="modal-button">
+          <svg class="modal-close">
+            <use href="./images/icon-form.svg#close-black"></use>
             "
           </svg>
         </button>
@@ -518,38 +600,69 @@
           <p class="title-modal">Оставьте свои данные, мы вам перезвоним</p>
           <label class="modal-lable">
             <span class="modal-input-name">Имя</span>
-           <span class="input-group"> <input class="modal-input" type="name" name="name" placeholder=" "/>
-            <svg class="modal-icon"> 
-              <use href="./imige/icon-form.svg#person-black"></use>
-            </svg>
-          </span>
+            <span class="input-group">
+              <input
+                class="modal-input"
+                type="name"
+                name="name"
+                placeholder=" "
+              />
+              <svg class="modal-icon">
+                <use href="./images/icon-form.svg#person-black"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-lable">
             <span class="modal-input-name"> Телефон</span>
-            <span class="input-group"><input class="modal-input" type="tel" name="tel" placeholder=" "/>             
-              <svg class="modal-icon"> 
-              <use href="./imige/icon-form.svg#phone-black"></use>
-            </svg>          
-          </span>
+            <span class="input-group"
+              ><input
+                class="modal-input"
+                type="tel"
+                name="tel"
+                placeholder=" "
+              />
+              <svg class="modal-icon">
+                <use href="./images/icon-form.svg#phone-black"></use>
+              </svg>
+            </span>
           </label>
           <label>
             <span class="modal-input-name">Почта</span>
-            <span class="input-group"><input class="modal-input" type="email"  name="email" placeholder=" "/>
+            <span class="input-group"
+              ><input
+                class="modal-input"
+                type="email"
+                name="email"
+                placeholder=" "
+              />
               <svg class="modal-icon">
-              <use href="./imige/icon-form.svg#email-black"></use>
-            </svg>
-          </span>
+                <use href="./images/icon-form.svg#email-black"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-lable">
             <span class="modal-input-name">Коментарий</span>
-            <textarea class="modal-texterea" name="coment" id="coment" cols="10" rows="10" placeholder="Введите текст"></textarea>
+            <textarea
+              class="modal-texterea"
+              name="coment"
+              id="coment"
+              cols="10"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
           <span class="contract">
             <label class="modal-check">
-              <input class="input-check" type="checkbox">
+              <input class="input-check" type="checkbox" />
               <span class="check-box"></span>
             </label>
-           <span class="contract-text"> <p>Соглашаюсь с рассылкой и принимаю <span><a class="modal-link" href="">Условия договора</a></span></p></span></span>
+            <span class="contract-text">
+              <p>
+                Соглашаюсь с рассылкой и принимаю
+                <span><a class="modal-link" href="">Условия договора</a></span>
+              </p></span
+            ></span
+          >
           <button class="button-agreement" type="submit">Отправить</button>
         </form>
       </div>
@@ -558,4 +671,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-    

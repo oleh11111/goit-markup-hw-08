@@ -61,11 +61,16 @@
     width: 450px;
     padding-top: 77px;
     padding-bottom: 77px;
+    align-items: center;
+    display: flex;
   }
   @media screen and (min-width: 768px) {
     padding-top: 49px;
     padding-bottom: 77px;
     width: 354px;
+    display: flex;
+    align-items: center;
+
   }
   @media screen and (min-width: 1200px) {
     padding-top: 63px;
@@ -85,12 +90,13 @@
 
   @media screen and (min-width: 768px) {
     max-width: 354px;
+    width: 100%;
     
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 370px;
-    
+    width: 100%;
   }
 }
 

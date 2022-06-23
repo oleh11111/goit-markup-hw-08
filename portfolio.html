@@ -25,24 +25,24 @@
           <a href="index.html" class="page-header__logo">
             <span class="page-header__logo-lable">Web</span>Studio</a
           >
-          <button class="menu-button is-open" data-menu-button
+          <button class="menu-button" data-menu-button
             type="button"
             aria-label="переключатель мобильного меню"
             aria-expanded="false"
             aria-controls="menu-container">
             <svg class="menu-icon" width="40" height="40">        
-              <use class="menu-icon-open" href="./imige/sprite.svg#open"></use>
-              <use class="menu-icon-close" href="./imige/sprite.svg#close"></use>
+              <use class="menu-icon-open" href="./images/sprite.svg#open"></use>
+              <use class="menu-icon-close" href="./images/sprite.svg#close"></use>
             </svg>
           </button>
 
-          <div class="menu-container is-open" id="menu-container" data-menu>            
+          <div class="menu-container" id="menu-container" data-menu>            
             <ul class="site-nav__list">
                 <li class="site-nav__item">
-                  <a href="index.html" class="site-nav__link site-nav__after-link">Студия</a>
+                  <a href="index.html" class="site-nav__link ">Студия</a>
                 </li>
                 <li class="site-nav__item">
-                  <a href="portfolio.html" class="site-nav__link">Портфолио</a>
+                  <a href="portfolio.html" class="site-nav__link site-nav__after-link">Портфолио</a>
                 </li>
                 <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
               </ul>
@@ -52,14 +52,14 @@
                   <li class="contact__item tel">
                     <a href="tel:+380961111111" class="contact__svg-link tel-mobile">
                       <svg class="contact__icon-tel c-icon">
-                        <use href="./imige/sprite.svg#tel"></use></svg
+                        <use href="./images/sprite.svg#tel"></use></svg
                       >+38 096 111 11 11</a
                     >
                   </li>
                   <li class="contact__item mail">
                     <a href="mailto:info@devstudio.com" class="contact__svg-link mail-mobile">
                       <svg class="contact__icon-mail c-icon">
-                        <use href=".//imige/sprite.svg#mail" class=""></use></svg>info@devstudio.com </a>                
+                        <use href=".//images/sprite.svg#mail" class=""></use></svg>info@devstudio.com </a>                
                   </li>     
                 </ul>
   
@@ -100,15 +100,13 @@
           
             <li class="item">
              <a href="" class="link ">
-            <div class="overlay-container">
-              <img
-              class="portpholio-img"
-              srcset="
-              ./imige/porttabl1.1x.jpg 354w, ./imige/deskport11x.jpg 370w, ./imige/1monitor1x.jpg 450w, 
-              ./imige/porttabl1.2x.jpg 708w, ./imige/deskport12x.jpg 740w, ./imige/1monitor2x.jpg 900w"
-              src="./imige/deskport11x.jpg"
-              width="370"
-              alt="профили трёх сотрудников комрании на мониторе"/>
+            <div class="overlay-container">              
+              <picture>
+                <source srcset="./images/team/desktop/deskport11x.jpg 1x, ./images/team/desktop/deskport12x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/team/tablet/porttabl1.1x.jpg 1x, ./images/team/tablet/porttabl1.2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/team/mobile/1monitor1x.jpg 1x, ./images/team/mobile/1monitor2x.jpg 2x" media="(min-width:320px)">
+                <img class="portpholio-img" src="./images/team/mobile/1monitor1x.jpg" alt="Фото профили трех сотрудников на мониторе" aria-label="Фото профили трех сотрудников на мониторе"                
+                </picture>
             <div class="overlay">
               <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
 
@@ -123,14 +121,13 @@
             </li>        
             <li class="item">
              <a href="" class="link">
-             <div class="overlay-container">
-              <img class="portpholio-img"
-              srcset="
-              ./imige/porttabl2.1x.jpg 354w, ./imige/deskport21x.jpg 370w, ./imige/2ball1x.jpg 450w, 
-              ./imige/porttabl2.2x.jpg 708w, ./imige/deskport22x.jpg 740w, ./imige/2ball2x.jpg 900w"
-              src="./imige/deskport21x.jpg"
-              width="370"
-              alt="два баскетболиста с мячом"/>
+             <div class="overlay-container">              
+              <picture>
+                <source srcset="./images/team/desktop/deskport21x.jpg 1x, ./images/team/desktop/deskport22x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/team/tablet/porttabl2.1x.jpg 1x, ./images/team/tablet/porttabl2.2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/team/mobile/2ball1x.jpg 1x, ./images/team/mobile/2ball2x.jpg 2x" media="(min-width:320px)">
+                <img class="portpholio-img" src="./images/team/mobile/2ball1x.jpg" alt="два баскетболиста" aria-label="два баскетболиста"                
+                </picture>
               <div class="overlay">
                 <p class="overlay-text">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque fuga adipisci, minus reiciendis atque doloribus eveniet explicabo laborum autem tempora, magni soluta, maiores quos? Nesciunt!
@@ -146,14 +143,12 @@
             <li class="item">
               <a href="" class="link">
                 <div class="overlay-container">
-                  <img
-                class="portpholio-img"
-                srcset="
-                ./imige/porttabl3.1x.jpg 354w, ./imige/deskport31x.jpg 370w, ./imige/3portsea1x.jpg 450w, 
-                ./imige/porttabl3.2x.jpg 708w, ./imige/deskport32x.jpg 740w, ./imige/3portsea2x.jpg 900w"
-                src="./imige/deskport31x.jpg"
-                width="370"
-                alt="рыба с надписью на ней The Seafod Restaraunt"/>
+                  <picture>
+                    <source srcset="./images/team/desktop/3deskport1x.jpg 1x, ./images/team/desktop/3deskport2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/team/tablet/porttabl3.1x.jpg 1x, ./images/team/tablet/porttabl3.2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/team/mobile/3portsea1x.jpg 1x, ./images/team/mobile/3portsea2x.jpg 2x" media="(min-width:320px)">
+                    <img class="portpholio-img" src="./images/team/mobile/3portsea1x.jpg" alt="два баскетболиста" aria-label="два баскетболиста"                
+                    </picture>
                
                 <div class="overlay">
                   <p class="overlay-text">
@@ -170,14 +165,12 @@
             <li class="item">
               <a href="http://" class="link">
              <div class="overlay-container">   
-               <img
-              class="portpholio-img"
-              srcset="
-              ./imige/porttabl4.1x.jpg 354w, ./imige/deskport41x.jpg 370w, ./imige/4headphone1x.jpg 450w, 
-              ./imige/porttabl4.2x.jpg 708w, ./imige/deskport42x.jpg 740w, ./imige/4headphone2x.jpg 900w"              
-              src="./imige/deskport41x.jpg"
-              width="370"
-              alt="наушники"/>
+              <picture>
+                <source srcset="./images/team/desktop/deskport41x.jpg 1x, ./images/team/desktop/deskport42x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/team/tablet/porttabl4.1x.jpg 1x, ./images/team/tablet/porttabl4.2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/team/mobile/4headphone1x.jpg 1x, ./images/team/mobile/4headphone2x.jpg 2x" media="(min-width:320px)">
+                <img class="portpholio-img" src="./images/team/mobile/4headphone1x.jpg" alt="два баскетболиста" aria-label="два баскетболиста"                
+                </picture>
             
                 <div class="overlay">
                   <p class="overlay-text">
@@ -194,15 +187,13 @@
             <li class="item">
               <a href="" class="link">
                 <div class="overlay-container">
-                  <img
-                  class="portpholio-img"
-                  srcset="
-              ./imige/porttabl5.1x.jpg 354w, ./imige/deskport51x.jpg 370w, ./imige/5box1x.jpg 450w, 
-              ./imige/porttabl5.2x.jpg 708w, ./imige/deskport52x.jpg 740w, ./imige/5box2x.jpg 900w" 
-                  src="./imige/deskport51x.jpg"
-                  width="370"
-                  alt="две картонные коробки"/>
-                
+                  <picture>
+                    <source srcset="./images/team/desktop/deskport51x.jpg 1x, ./images/team/desktop/deskport52x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/team/tablet/porttabl5.1x.jpg 1x, ./images/team/tablet/porttabl5.2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/team/mobile/5box1x.jpg 1x, ./images/team/mobile/5box2x.jpg 2x" media="(min-width:320px)">
+                    <img class="portpholio-img" src="./images/team/mobile/5box1x.jpg" alt="два баскетболиста" aria-label="два баскетболиста"                
+                    </picture>
+                />
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque fuga adipisci, minus reiciendis atque doloribus eveniet explicabo laborum autem tempora, magni soluta, maiores quos? Nesciunt!
@@ -218,14 +209,12 @@
             <li class="item">
               <a href="" class="link">
                 <div class="overlay-container">
-                  <img
-                  class="portpholio-img"
-                  srcset="
-              ./imige/porttabl6.1x.jpg 354w, ./imige/deskport6x.jpg 370w, ./imige/6blackmonitor1x.jpg 450w, 
-              ./imige/porttabl6.2x.jpg 708w, ./imige/deskport62x.jpg 740w, ./imige/6blackmonitor2x.jpg 900w" 
-                  src="./imige/deskport61x.jpg"
-                  width="370"
-                  alt="страница сайта Inspiration has no Borders"/>
+                  <picture>
+                    <source srcset="./images/team/desktop/deskport61x.jpg 1x, ./images/team/desktop/deskport62x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/team/tablet/porttabl6.1x.jpg 1x, ./images/team/tablet/porttabl6.2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/team/mobile/6blackmonitor1x.jpg 1x, ./images/team/mobile/6blackmonitor2x.jpg 2x" media="(min-width:320px)">
+                    <img class="portpholio-img" src="./images/team/mobile/6blackmonitor1x.jpg" alt="два баскетболиста" aria-label="два баскетболиста"                
+                    </picture>
                 
                 <div class="overlay">
                   <p class="overlay-text">
@@ -243,12 +232,12 @@
               <div class="overlay-container">
               <img
               class="portpholio-img"
-              srcset="
-              ./imige/porttabl7.1x.jpg 354w, ./imige/deskport71x.jpg 370w, ./imige/7book1x.jpg 450w, 
-              ./imige/porttabl7.2x.jpg 708w, ./imige/deskport72x.jpg 740w, ./imige/7book2x.jpg 900w" 
-              src="./imige/deskport71x.jpg"
-              width="370"
-              alt="раскрытая книга"/>
+              <picture>
+                <source srcset="./images/team/desktop/deskport71x.jpg 1x, ./images/team/desktop/deskport72x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/team/tablet/porttabl7.1x.jpg 1x, ./images/team/tablet/porttabl7.2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/team/mobile/7book1x.jpg 1x, ./images/team/mobile/7book2x.jpg 2x" media="(min-width:320px)">
+                <img class="portpholio-img" src="./images/team/mobile/7book1x.jpg" alt="два баскетболиста" aria-label="два баскетболиста"                
+                </picture>
             
               <div class="overlay">
                 <p class="overlay-text">
@@ -267,13 +256,12 @@
             <li class="item">
               <a href="" class="link">
                 <div class="overlay-container">
-                  <img class="portpholio-img"
-                  srcset="
-              ./imige/porttabl8.1x.jpg 354w, ./imige/deskport81x.jpg 370w, ./imige/8lable1x.jpg 450w, 
-              ./imige/porttabl8.2x.jpg 708w, ./imige/deskport82x.jpg 740w, ./imige/8lable2x.jpg 900w" 
-                  src="./imige/deskport81x.jpg"
-                  width="370"
-                  alt="бейдж с надписью LAB EL TEB"/>
+                  <picture>
+                    <source srcset="./images/team/desktop/deskport81x.jpg 1x, ./images/team/desktop/deskport82x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/team/tablet/porttabl8.1x.jpg 1x, ./images/team/tablet/porttabl8.2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/team/mobile/8lable1x.jpg 1x, ./images/team/mobile/8lable2x.jpg 2x" media="(min-width:320px)">
+                    <img class="portpholio-img" src="./images/team/mobile/8lable1x.jpg" alt="два баскетболиста" aria-label="два баскетболиста"                
+                    </picture>
                 <div class="overlay">
                   <p class="overlay-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque fuga adipisci, minus reiciendis atque doloribus eveniet explicabo laborum autem tempora, magni soluta, maiores quos? Nesciunt!
@@ -288,15 +276,13 @@
             </li>
             <li class="item">
             <a href="" class="link">  
-              <div class="overlay-container"> <img
-                class="portpholio-img"
-                srcset="
-              ./imige/porttabl9.1x.jpg 354w, ./imige/deskport91x.jpg 370w, ./imige/9mac1x.jpg 450w, 
-              ./imige/porttabl9.2x.jpg 708w, ./imige/deskport92x.jpg 740w, ./imige/9mac2x.jpg 900w"
-                src="./imige/deskport91x.jpg"
-                width="370"
-                alt="открытое на net book Приложение Growing Business"/>
-              
+              <div class="overlay-container">
+                <picture>
+                  <source srcset="./images/team/desktop/deskport91x.jpg 1x, ./images/team/desktop/deskport92x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/team/tablet/porttabl9.1x.jpg 1x, ./images/team/tablet/porttabl9.2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/team/mobile/9mac1x.jpg 1x, ./images/team/mobile/9mac2x.jpg 2x" media="(min-width:320px)">
+                  <img class="portpholio-img" src="./images/team/mobile/9mac1x.jpg" alt="два баскетболиста" aria-label="два баскетболиста"                
+                  </picture>
               <div class="overlay">
                 <p class="overlay-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque fuga adipisci, minus reiciendis atque doloribus eveniet explicabo laborum autem tempora, magni soluta, maiores quos? Nesciunt!
@@ -350,14 +336,14 @@
               <a href="instagram.com" class="soc-link-company__link">
                 <svg class="soc-link-company__icon">
                 
-                  <use href="./imige/sprite.svg#instagram"></use>
+                  <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-link-company__item">
               <a href="" class="soc-link-company__link">
                 <svg class="soc-link-company__icon">
-                  <use href="./imige/sprite.svg#twit"></use>
+                  <use href="./images/sprite.svg#twit"></use>
                 </svg>
               </a>
             </li>
@@ -365,14 +351,14 @@
             <li class="soc-link-company__item">
               <a href="linkedin.com" class="soc-link-company__link">
                 <svg class="soc-link-company__icon">
-                  <use href="./imige/sprite.svg#facebook1"></use>
+                  <use href="./images/sprite.svg#facebook1"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-link-company__item">
               <a href="twitter.com" class="soc-link-company__link">
                 <svg class="soc-link-company__icon">
-                  <use href="./imige/sprite.svg#linkedin1"></use>
+                  <use href="./images/sprite.svg#linkedin1"></use>
                 </svg>
               </a>
             </li>
@@ -396,7 +382,7 @@
             <button type="submit" class="subscription__button">
               Подписаться
               <svg class="subscription__icon">
-                <use href="./imige/icon-form.svg#telegram"></use>
+                <use href="./images/icon-form.svg#telegram"></use>
               </svg>
             </button></div>
           </form>

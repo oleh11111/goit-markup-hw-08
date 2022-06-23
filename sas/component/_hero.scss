@@ -9,7 +9,7 @@ display: block;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../imige/deskheader1x.jpg);
+      rgba(47, 48, 58, 0.4)), url(../images/deskheader1x.jpg);
 
   @media screen and (min-width: 768px) {
     padding-top: 118px;
@@ -19,39 +19,39 @@ display: block;
 
   
 
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../imige/header1x.jpg);
+      rgba(47, 48, 58, 0.4)), url(../images/header1x.jpg);
     background-size: cover;
     width: 450px;
   }
 
-  @media (min-resolution2dppx) {
-    background-image:  url(../imige/header2x.jpg);
+  @media screen and (min-resolution2dppx) {
+    background-image:  url(../images/header2x.jpg);
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../imige/tablheader1x.jpg);
+      rgba(47, 48, 58, 0.4)), url(../images/tablheader1x.jpg);
       
       width: 768px;
   }
-  @media (min-resolution2dppx) {
-    background-image: url(../imige/tablheader2x.jpg);
+  @media screen and (min-resolution2dppx) {
+    background-image: url(../images/tablheader2x.jpg);
     
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../imige/deskheader1x.jpg);
+      rgba(47, 48, 58, 0.4)), url(../images/deskheader1x.jpg);
     width: 1600px;
   }
 
-  @media (min-resolution2dppx) {
-    background-image: url(../imige/deskheader2x.jpg);
+  @media screen and (min-resolution2dppx) {
+    background-image: url(../images/deskheader2x.jpg);
     
   }
 

@@ -10,7 +10,7 @@
   width: 40px;
   height: 40px;
   border: none;
-  z-index: 99;
+  z-index: 3;
   background-color: transparent;
 
   @media screen and (min-width: 768px) {
@@ -18,24 +18,19 @@
   }
 }
 
+
+
 .menu-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+
 }
 
-.menu-icon-close {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.menu-button .menu-icon-close {
+.menu-icon-close{
   display: none;
 }
+
 
 .menu-button.is-open .menu-icon-close {
   display: block;
@@ -45,7 +40,7 @@
   display: none;
 }
 .menu-container {
-  min-width: 320px;
+  
   width: 100%;
   height: auto;
   background-color: #ffffff;
@@ -64,7 +59,7 @@
     top: 0;
     left: 0;
     padding: 48px 40px;
-    z-index: 5;
+    z-index: 2;
   }
 
   @media screen and (min-width: 768px) {
@@ -81,10 +76,11 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+  
 }
+
+
+
 
 .menu-soc-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -100,7 +96,7 @@
   color: var(--accent-color);
 }
 
-.menu-soc-link:not(:last-child) {
+.menu-soc-link:not(last-child) {
   margin-right: 10px;
 }
 
@@ -112,4 +108,9 @@
 .menu-button:focus .menu-icon-open,
 .menu-button:focus .menu-icon-close {
   fill: var(--accent-color);
+}
+.menu-soc-list{
+  @media screen and (min-width:768px) {
+   display: none; 
+  }
 }
