@@ -68,3 +68,23 @@
     width: 1200px;
   }
 }
+.nav-wraper{
+  @media screen and (max-width: 767px) {
+    display: none;
+    ;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    ;
+  }
+}
+  .nav-wraper .contact{
+@media screen and (min-widtth: 1200px) {
+  margin-left: 305px;
+  display: flex;
+}
+ 
+
+ 
+
+}
